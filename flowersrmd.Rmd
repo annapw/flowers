@@ -16,7 +16,8 @@ library(tidyverse)
 
 iris
 flowers_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
-  geom_point(aes(color = Species))
+  geom_point(aes(color = Species)) +
+  facet_wrap(~Species)
 
 flowers_scat
 ```

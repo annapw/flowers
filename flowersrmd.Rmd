@@ -10,3 +10,14 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 Hi! 
+
+```{r}
+library(tidyverse)
+
+iris
+flowers_scat <- ggplot(iris, aes(x = Petal.Length, y = Petal.Width)) +
+  geom_point(aes(color = Species))
+
+flowers_scat
+```
+
